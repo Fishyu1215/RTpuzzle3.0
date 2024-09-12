@@ -194,8 +194,8 @@ function updateBox(array,target1,target2){
       document.getElementById(JSON.stringify(i)).style.backgroundImage="";}
       else{
       document.getElementById(JSON.stringify(i)).innerHTML =box[i]; 
-      console.log("url= "+`url(/pic/${box[i]}.png)`);
-      document.getElementById(JSON.stringify(i)).style.backgroundImage=`url(/pic/${box[i]}.png)`;
+      console.log("url= "+`url(pic/${box[i]}.png)`);
+      document.getElementById(JSON.stringify(i)).style.backgroundImage=`url(pic/${box[i]}.png)`;
       }
     }
 
@@ -213,7 +213,7 @@ function updateBox(array,target1,target2){
       document.getElementById(JSON.stringify(i)).style.backgroundImage="";}
       else{
       document.getElementById(JSON.stringify(i)).innerHTML =box[i]; 
-      document.getElementById(JSON.stringify(i)).style.backgroundImage=`url(/pic/${box[i]}.png)`;}
+      document.getElementById(JSON.stringify(i)).style.backgroundImage=`url(pic/${box[i]}.png)`;}
     }
 }
 
@@ -235,7 +235,7 @@ function webMove(board,index,direction,id,target,box){
       document.getElementById(parseInt(id)-3).innerText =target;
 
       document.getElementById(id).style.backgroundImage="";
-      document.getElementById(parseInt(id)-3).style.backgroundImage=`url(/pic/${target}.png)`;
+      document.getElementById(parseInt(id)-3).style.backgroundImage=`url(pic/${target}.png)`;
 
       updateBox(box,JSON.stringify(randomnumber), target);
 
@@ -249,7 +249,7 @@ function webMove(board,index,direction,id,target,box){
       document.getElementById(parseInt(id)+3).innerText =target;
 
       document.getElementById(id).style.backgroundImage="";
-      document.getElementById(parseInt(id)+3).style.backgroundImage=`url(/pic/${target}.png)`;
+      document.getElementById(parseInt(id)+3).style.backgroundImage=`url(pic/${target}.png)`;
 
       updateBox(box,JSON.stringify(randomnumber), target);
 
@@ -264,7 +264,7 @@ function webMove(board,index,direction,id,target,box){
 
 
         document.getElementById(id).style.backgroundImage="";
-        document.getElementById(parseInt(id)-1).style.backgroundImage=`url(/pic/${target}.png)`;
+        document.getElementById(parseInt(id)-1).style.backgroundImage=`url(pic/${target}.png)`;
 
         updateBox(box,JSON.stringify(randomnumber), target);
 
@@ -278,7 +278,7 @@ function webMove(board,index,direction,id,target,box){
       document.getElementById(parseInt(id)+1).innerText =target;
 
       document.getElementById(id).style.backgroundImage="";
-      document.getElementById(parseInt(id)+1).style.backgroundImage=`url(/pic/${target}.png)`;
+      document.getElementById(parseInt(id)+1).style.backgroundImage=`url(pic/${target}.png)`;
 
       updateBox(box,JSON.stringify(randomnumber), target);
 
