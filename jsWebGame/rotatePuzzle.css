@@ -1,0 +1,96 @@
+body{
+  text-align: center;
+}
+
+
+.button {
+  margin-top: 10px;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  
+.grid-container {
+  cursor:pointer;
+    text-align: center;
+    width: 303px;
+    height: 303px;
+    display: grid;
+ 
+    grid-template-columns: auto auto auto;
+    background-color: #cdd3d8;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    gap: 3px;
+
+    border: 6px solid black;
+    margin: auto;
+    background-color: lightblue;
+    
+  }
+
+  .grid-item {
+    text-indent: -9998px; 
+    width: 100%;
+    height: 100%;
+   
+    color: #E1332D;
+    position: relative;
+   
+    box-sizing: inherit;
+    align-content: center;
+    text-align: center;
+    font-size:xx-large;
+
+    background-size: contain;
+   
+ 
+
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(225, 51, 45, 0);
+    outline: 1px solid !important;
+    outline-color: rgba(225, 51, 45, 0.5);
+    outline-offset: 0px;
+    text-shadow: none;
+   
+  }
+
+  .grid-item:hover{
+    color: #E1332D;
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(225, 51, 45, 0.5), 0 0 20px rgba(225, 51, 45, 0.2);
+    outline: 1px solid !important;
+    outline-color: rgba(225, 51, 45, 0) !important;
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+  }
+
+
+
+  .blankBox {
+    background-color: yellow;
+  }
+
+
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    100%  {background-color:yellow; left:200px; top:0px;}
+  }
+
+
